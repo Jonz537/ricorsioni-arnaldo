@@ -1,16 +1,16 @@
-public class Node<T> {
+public class Node {
 
-    private T value;
+    private Object value;
     private Node firstSon;
     private Node secondSon;
 
-    public Node(T value) {
+    public Node(Object value) {
         this.value = value;
         firstSon = null;
         secondSon = null;
     }
 
-    public Node(T value, Node firstSon, Node secondSon) {
+    public Node(Object value, Node firstSon, Node secondSon) {
         this.value = value;
         this.firstSon = firstSon;
         this.secondSon = secondSon;
@@ -21,11 +21,11 @@ public class Node<T> {
     }
 
 
-    public T getValue() {
+    public Object getValue() {
         return value;
     }
 
-    public void setValue(T value) {
+    public void setValue(Object value) {
         this.value = value;
     }
 

@@ -1,7 +1,3 @@
-import org.jetbrains.annotations.Contract;
-import org.jetbrains.annotations.NotNull;
-
-import java.util.Objects;
 import java.util.Random;
 
 public class BinaryTree {
@@ -49,9 +45,9 @@ public class BinaryTree {
 
     public static Node generationNode() {
         if (random.nextInt(0, 101) > 45) {
-            return new Node<>(ops[random.nextInt(0, 3)], generationNode(), generationNode());
+            return new Node(ops[random.nextInt(0, 3)], generationNode(), generationNode());
         }
-        return new Node<>(random.nextInt(0, 5));
+        return new Node(random.nextInt(0, 5));
     }
 
     public int resolveThisTree() {
